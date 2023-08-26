@@ -12,7 +12,7 @@ function logCheck(){
     let name = document.getElementById('name').value;
     let pass = document.getElementById('password').value;
 
-    if(name === "pavan" && pass === "pavan"){
+    if(name === "admin" && pass === "admin" || name === "user" && pass === "user"){
         window.location.href="dashboard.html";
     }else{
         alert("Username or password invalid");
@@ -45,9 +45,9 @@ function navCheck(param){
             window.location.href="mana_user.html"
             break;
         case 'books':
-            //code
+            window.location.href="mana_book.html"
             break;
-            
+        
             
     }
 }
@@ -59,6 +59,12 @@ function homeNavCheck(param){
             break;
         case 'contact':
             window.location.href="contact.html";
+            break;
+        case 'home':
+            window.location.href="index.html";
+            break;
+        case 'book':
+            window.location.href="books.html";
             break;
         default:
             alert("work in progress...");
